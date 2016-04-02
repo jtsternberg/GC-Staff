@@ -93,6 +93,25 @@ class GCST_Staff extends GCST_Post_Types_Base {
 	 */
 	public function fields() {
 		$fields = array(
+			'gc_staff_connected_user' => array(
+				'name'  => __( 'Connected WordPress User', 'gc-staff' ),
+				'id'    => 'gc_staff_connected_user',
+				'desc'  => __( 'Type the name of the WordPress user and select from the suggested options. By associating a staff-member with a WordPress user, that WordPress user account details (first/last name, avatar, bio, etc) will be used as a fallback to the information here.', 'gc-staff' ),
+				'type'  => 'user_select_text',
+				'options' => array(
+					'minimum_user_level' => 0,
+				),
+			),
+			'gc_staff_first' => array(
+				'id'   => 'gc_staff_first',
+				'name' => __( 'First Name', 'gc-staff' ),
+				'type' => 'text',
+			),
+			'gc_staff_last' => array(
+				'id'   => 'gc_staff_last',
+				'name' => __( 'Last Name', 'gc-staff' ),
+				'type' => 'text',
+			),
 			'excerpt' => array(
 				'id'   => 'excerpt',
 				'name' => __( 'Excerpt', 'gc-staff' ),
@@ -102,13 +121,17 @@ class GCST_Staff extends GCST_Post_Types_Base {
 			),
 			'_thumbnail' => array(
 				'id'   => '_thumbnail',
-				'name' => __( 'Staff Image', 'gc-staff' ),
+				'name' => __( 'Image', 'gc-staff' ),
 				'type' => 'file',
 			),
-			'social' => array(
+			'gc_staff_email' => array(
+				'id'   => 'gc_staff_email',
+				'name' => __( 'Email Address', 'gc-staff' ),
+				'type' => 'text_email',
+			),
+			'gc_staff_social' => array(
 				'id'          => 'gc_staff_social',
 				'type'        => 'group',
-				'description' => __( 'Generates reusable form entries', 'gc-staff' ),
 				'options'     => array(
 					'group_title'   => __( 'Social Account {#}', 'gc-staff' ), // {#} gets replaced by row number
 					'add_button'    => __( 'Add Another Social Account', 'gc-staff' ),

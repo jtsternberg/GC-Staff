@@ -13,13 +13,17 @@
 	"minimum-stability": "dev",
 	"type": "wordpress-plugin",
 	"autoload": {
-		"classmap": ["gc-staff.php", "includes/"]
+		"classmap": ["gc-staff.php", "includes/"],
+		"files": [
+			"vendor/webdevstudios/cmb2-user-select/cmb2-user-select.php"
+		]
 	},
 	"require": {
 		"php": ">=5.2",
 		"xrstf/composer-php52": "1.*",
 		"webdevstudios/cpt-core": "^1.0",
-		"webdevstudios/cmb2": "^2.2"
+		"webdevstudios/cmb2": "^2.2",
+		"webdevstudios/cmb2-user-select": "^v0.2.1"
 	},
 	"scripts": {
         "post-install-cmd": [

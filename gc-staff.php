@@ -97,6 +97,14 @@ class GC_Staff {
 	protected $staff;
 
 	/**
+	 * Instance of GCST_Taxonomies
+	 *
+	 * @since NEXT
+	 * @var GCST_Taxonomies
+	 */
+	protected $taxonomies;
+
+	/**
 	 * Creates or returns an instance of this class.
 	 *
 	 * @since  NEXT
@@ -132,6 +140,7 @@ class GC_Staff {
 	public function plugin_classes() {
 		// Attach other plugin classes to the base plugin class.
 		$this->staff = new GCST_Staff( $this );
+		$this->taxonomies = new GCST_Taxonomies( $this->staff );
 	} // END OF PLUGIN CLASSES FUNCTION
 
 	/**
@@ -251,6 +260,7 @@ class GC_Staff {
 			case 'url':
 			case 'path':
 			case 'staff':
+			case 'taxonomies':
 				return $this->$field;
 			default:
 				throw new Exception( 'Invalid '. __CLASS__ .' property: ' . $field );

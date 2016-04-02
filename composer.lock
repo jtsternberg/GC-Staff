@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72d377025f8ba350e131cbe09d4d6161",
-    "content-hash": "482d6fcb814d81bdaa82ecb7fda36c6a",
+    "hash": "5917cf6935d3344d525dcf5ca0fd01cf",
+    "content-hash": "ec65f97134a7b2723d18fb207c5d3832",
     "packages": [
         {
             "name": "webdevstudios/cmb2",
@@ -51,6 +51,50 @@
                 "wordpress"
             ],
             "time": "2016-02-29 22:09:38"
+        },
+        {
+            "name": "webdevstudios/cmb2-user-select",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WebDevStudios/CMB2-User-Select.git",
+                "reference": "ad506e47c5fd064d78097efc538c172504799206"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WebDevStudios/CMB2-User-Select/zipball/ad506e47c5fd064d78097efc538c172504799206",
+                "reference": "ad506e47c5fd064d78097efc538c172504799206",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "cmb2-user-select.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com",
+                    "homepage": "https://github.com/WebDevStudios",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Special CMB2 Field that allows users to define an autocomplete text field for users",
+            "homepage": "https://github.com/WebDevStudios/CMB2-User-Select",
+            "keywords": [
+                "CMB2",
+                "meta",
+                "wordpress"
+            ],
+            "time": "2016-03-27 23:02:12"
         },
         {
             "name": "webdevstudios/cpt-core",
