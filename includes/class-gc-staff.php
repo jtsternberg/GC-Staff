@@ -48,7 +48,7 @@ class GCST_Staff extends GCST_Post_Types_Base {
 		// Register this cpt
 		// First parameter should be an array with Singular, Plural, and Registered name.
 		parent::__construct( $plugin, array(
-			'labels' => array( __( 'Staff', 'gc-staff' ), __( 'Staff Members', 'gc-staff' ), 'gc-staff' ),
+			'labels' => array( __( 'Staff Member', 'gc-staff' ), __( 'Staff Members', 'gc-staff' ), 'gc-staff' ),
 			'args' => array(
 				'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
 				'menu_icon' => 'dashicons-nametag',
@@ -112,6 +112,11 @@ class GCST_Staff extends GCST_Post_Types_Base {
 				'name' => __( 'Last Name', 'gc-staff' ),
 				'type' => 'text',
 			),
+			'gc_staff_email' => array(
+				'id'   => 'gc_staff_email',
+				'name' => __( 'Email Address', 'gc-staff' ),
+				'type' => 'text_email',
+			),
 			'excerpt' => array(
 				'id'   => 'excerpt',
 				'name' => __( 'Excerpt', 'gc-staff' ),
@@ -123,11 +128,6 @@ class GCST_Staff extends GCST_Post_Types_Base {
 				'id'   => '_thumbnail',
 				'name' => __( 'Image', 'gc-staff' ),
 				'type' => 'file',
-			),
-			'gc_staff_email' => array(
-				'id'   => 'gc_staff_email',
-				'name' => __( 'Email Address', 'gc-staff' ),
-				'type' => 'text_email',
 			),
 			'gc_staff_social' => array(
 				'id'          => 'gc_staff_social',
