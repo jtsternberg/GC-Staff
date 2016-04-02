@@ -1,0 +1,669 @@
+# Copyright (C) 2016 jtsternberg
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: GC Staff 0.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gc-staff\n"
+"POT-Creation-Date: 2016-04-02 17:13:12+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: gc-staff.php:234
+msgid ""
+"GC Staff is missing requirements and has been <a "
+"href=\"%s\">deactivated</a>. Please make sure all requirements are "
+"available."
+msgstr ""
+
+#: includes/class-gc-staff.php:51
+msgid "Staff"
+msgstr ""
+
+#: includes/class-gc-staff.php:51
+msgid "Staff Members"
+msgstr ""
+
+#: includes/class-gc-staff.php:94
+msgid "Excerpt"
+msgstr ""
+
+#: includes/class-gc-staff.php:95
+msgid ""
+"Excerpts are optional hand-crafted summaries of your content that can be "
+"used in your theme. <a href=\"https://codex.wordpress.org/Excerpt\" "
+"target=\"_blank\">Learn more about manual excerpts.</a>"
+msgstr ""
+
+#: includes/class-gc-staff.php:101
+msgid "Staff Image"
+msgstr ""
+
+#: includes/class-gc-staff.php:108
+msgid "Staff Member Details"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:80
+msgid "Test Metabox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:91
+#: vendor/webdevstudios/cmb2/example-functions.php:383
+msgid "Test Text"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:92
+#: vendor/webdevstudios/cmb2/example-functions.php:104
+#: vendor/webdevstudios/cmb2/example-functions.php:112
+#: vendor/webdevstudios/cmb2/example-functions.php:120
+#: vendor/webdevstudios/cmb2/example-functions.php:129
+#: vendor/webdevstudios/cmb2/example-functions.php:137
+#: vendor/webdevstudios/cmb2/example-functions.php:152
+#: vendor/webdevstudios/cmb2/example-functions.php:160
+#: vendor/webdevstudios/cmb2/example-functions.php:168
+#: vendor/webdevstudios/cmb2/example-functions.php:185
+#: vendor/webdevstudios/cmb2/example-functions.php:194
+#: vendor/webdevstudios/cmb2/example-functions.php:207
+#: vendor/webdevstudios/cmb2/example-functions.php:214
+#: vendor/webdevstudios/cmb2/example-functions.php:221
+#: vendor/webdevstudios/cmb2/example-functions.php:235
+#: vendor/webdevstudios/cmb2/example-functions.php:248
+#: vendor/webdevstudios/cmb2/example-functions.php:261
+#: vendor/webdevstudios/cmb2/example-functions.php:273
+#: vendor/webdevstudios/cmb2/example-functions.php:282
+#: vendor/webdevstudios/cmb2/example-functions.php:290
+#: vendor/webdevstudios/cmb2/example-functions.php:299
+#: vendor/webdevstudios/cmb2/example-functions.php:306
+#: vendor/webdevstudios/cmb2/example-functions.php:320
+#: vendor/webdevstudios/cmb2/example-functions.php:384
+#: vendor/webdevstudios/cmb2/example-functions.php:475
+#: vendor/webdevstudios/cmb2/example-functions.php:483
+#: vendor/webdevstudios/cmb2/example-functions.php:490
+#: vendor/webdevstudios/cmb2/example-functions.php:497
+#: vendor/webdevstudios/cmb2/example-functions.php:504
+#: vendor/webdevstudios/cmb2/example-functions.php:511
+#: vendor/webdevstudios/cmb2/example-functions.php:518
+#: vendor/webdevstudios/cmb2/example-functions.php:545
+#: vendor/webdevstudios/cmb2/example-functions.php:553
+#: vendor/webdevstudios/cmb2/example-functions.php:560
+#: vendor/webdevstudios/cmb2/example-functions.php:597
+msgid "field description (optional)"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:103
+msgid "Test Text Small"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:111
+msgid "Test Text Medium"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:119
+msgid "Website URL"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:128
+msgid "Test Text Email"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:136
+msgid "Test Time"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:144
+#: vendor/webdevstudios/cmb2/example-functions.php:145
+msgid "Time zone"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:151
+msgid "Test Date Picker"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:159
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:167
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:184
+msgid "Test Money"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:193
+msgid "Test Color Picker"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:206
+msgid "Test Text Area"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:213
+msgid "Test Text Area Small"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:220
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:227
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:228
+msgid "This is a title description"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:234
+msgid "Test Select"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:240
+#: vendor/webdevstudios/cmb2/example-functions.php:253
+#: vendor/webdevstudios/cmb2/example-functions.php:265
+msgid "Option One"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:241
+#: vendor/webdevstudios/cmb2/example-functions.php:254
+#: vendor/webdevstudios/cmb2/example-functions.php:266
+msgid "Option Two"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:242
+#: vendor/webdevstudios/cmb2/example-functions.php:255
+#: vendor/webdevstudios/cmb2/example-functions.php:267
+msgid "Option Three"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:247
+msgid "Test Radio inline"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:260
+msgid "Test Radio"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:272
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:281
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:289
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:298
+msgid "Test Checkbox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:305
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:311
+msgid "Check One"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:312
+msgid "Check Two"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:313
+msgid "Check Three"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:319
+msgid "Test wysiwyg"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:327
+msgid "Test Image"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:328
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:334
+msgid "Multiple Files"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:335
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:342
+msgid "oEmbed"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:343
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
+"Embeds</a>."
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:374
+msgid "About Page Metabox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:403
+msgid "Repeating Field Group"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:411
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:413
+msgid "Entry {#}"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:414
+msgid "Add Another Entry"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:415
+msgid "Remove Entry"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:428
+msgid "Entry Title"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:435
+msgid "Description"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:436
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:442
+msgid "Entry Image"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:448
+msgid "Image Caption"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:467
+msgid "User Profile Metabox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:474
+#: vendor/webdevstudios/cmb2/example-functions.php:544
+msgid "Extra Info"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:482
+msgid "Avatar"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:489
+msgid "Facebook URL"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:496
+msgid "Twitter URL"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:503
+msgid "Google+ URL"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:510
+msgid "Linkedin URL"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:517
+msgid "User Field"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:537
+msgid "Category Metabox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:552
+msgid "Term Image"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:559
+msgid "Arbitrary Term Field"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:581
+msgid "Theme Options Metabox"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/example-functions.php:596
+msgid "Site Background Color"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2.php:122
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2.php:375
+msgid "Click to toggle"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Ajax.php:65
+msgid "Please Try Again"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Ajax.php:155
+msgid "Remove Embed"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Ajax.php:159
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Field.php:1030
+msgid "Add Group"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Field.php:1031
+msgid "Remove Group"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Field.php:1053
+#: vendor/webdevstudios/cmb2/includes/CMB2_Field.php:1057
+msgid "None"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:86
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:119
+msgid "Clear"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:87
+msgid "Default"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:88
+msgid "Select Color"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:89
+msgid "Current Color"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:110
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:111
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:112
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:113
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:114
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:115
+msgid "Next"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:116
+msgid "Prev"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:117
+msgid "Today"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:118
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:128
+msgid "Done"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:122
+msgid "Choose Time"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:123
+msgid "Time"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:124
+msgid "Hour"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:125
+msgid "Minute"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:126
+msgid "Second"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:127
+msgid "Now"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:135
+msgid "Use this file"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:136
+msgid "Use these files"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:137
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:1021
+msgid "Remove Image"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:138
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:357
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:1040
+msgid "Remove"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:139
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:1035
+msgid "File:"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:140
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:1038
+msgid "Download"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:141
+msgid "Select / Deselect All"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:298
+msgid "Add Row"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:768
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:816
+msgid "No terms"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:884
+msgid "Add or Upload Files"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_Types.php:945
+msgid "Add or Upload File"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_hookup.php:120
+msgid ""
+"Term Metadata is a WordPress > 4.4 feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_hookup.php:124
+msgid "Term metaboxes configuration requires a 'taxonomies' parameter"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/helper-functions.php:250
+msgid "Save"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:77
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:81
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:85
+msgid "It is required to pass a single, plural and slug string to CPT_Core"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:134
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:135
+msgid "Add New %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:136
+msgid "Edit %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:137
+msgid "New %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:138
+msgid "All %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:139
+msgid "View %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:140
+msgid "Search %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:141
+msgid "No %s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:142
+msgid "No %s found in Trash"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:143
+msgid "Parent %s:"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:194
+msgid "Custom field updated."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:195
+msgid "Custom field deleted."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:196
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:213
+msgid "%1$s updated."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:198
+#. translators: %s: date and time of the revision
+msgid "%1$s restored to revision from %2$s"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:199
+msgid "%1$s saved."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:204
+msgid "%1$s updated. <a href=\"%2$s\">View %1$s</a>"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:205
+msgid "%1$s published. <a href=\"%2$s\">View %1$s</a>"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:206
+msgid "%1$s submitted. <a target=\"_blank\" href=\"%2$s\">Preview %1$s</a>"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:208
+#. translators: Publish box date format, see http:php.net/date
+msgid ""
+"%1$s scheduled for: <strong>%2$s</strong>. <a target=\"_blank\" "
+"href=\"%3$s\">Preview %1$s</a>"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:208
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:217
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:209
+msgid "%1$s draft updated. <a target=\"_blank\" href=\"%2$s\">Preview %1$s</a>"
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:214
+msgid "%1$s published."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:215
+msgid "%1$s submitted."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:217
+#. translators: Publish box date format, see http:php.net/date
+msgid "%1$s scheduled for: <strong>%2$s</strong>."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:218
+msgid "%1$s draft updated."
+msgstr ""
+
+#: vendor/webdevstudios/cpt-core/CPT_Core.php:267
+msgid "%s Title"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "GC Staff"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://dsgnwrks.pro"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Manage staff and staff users in WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "jtsternberg"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:109
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: vendor/webdevstudios/cmb2/includes/CMB2_JS.php:129
+msgctxt ""
+"Valid formatting string, as per "
+"http://trentrichardson.com/examples/timepicker/"
+msgid "hh:mm TT"
+msgstr ""

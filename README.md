@@ -12,6 +12,8 @@
 
 Manage staff and staff users in WordPress
 
+Please note: you will need to run composer install in order to fetch the dependenceis for this plugin/library, or you can download the zip here.
+
 ## Installation ##
 
 ### Manual Installation ###

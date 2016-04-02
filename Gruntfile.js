@@ -74,6 +74,13 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		githooks: {
+			all: {
+				// create zip and deploy changes to ftp
+				'pre-push': 'compress'
+			}
+		},
+
 		replace: {
 			version_php: {
 				src: [
@@ -96,102 +103,63 @@ module.exports = function( grunt ) {
 				} ]
 			},
 			version_readme: {
-				src: 'README.md',
+				src: ['README.md', 'readme.txt'],
 				overwrite: true,
 				replacements: [ {
 						from: /^\*\*Stable tag:\*\*(\s*?)[a-zA-Z0-9.-]+(\s*?)$/mi,
 						to: '**Stable tag:**$1<%= pkg.version %>$2'
 				} ]
 			},
-			readme_txt: {
-				src: 'README.md',
-				dest: 'release/' + pkg.version + '/readme.txt',
-				replacements: [ {
-						from: /^# (.*?)( #+)?$/mg,
-						to: '=== $1 ==='
-					}, {
-						from: /^## (.*?)( #+)?$/mg,
-						to: '== $1 =='
-					}, {
-						from: /^### (.*?)( #+)?$/mg,
-						to: '= $1 ='
-					}, {
-						from: /^\*\*(.*?):\*\*/mg,
-						to: '$1:'
+		},
+
+		compress: {
+			main: {
+				options: {
+					mode: 'zip',
+					archive: 'gc-staff.zip'
+				},
+				files: [ {
+						expand: true,
+						src: [
+							'**',
+							'!**/**dandelion**.yml',
+							'!**/**.xml',
+							'!**/Dockunit.json',
+							'!**/package.json',
+							'!**/node_modules/**',
+							'!**/bin/**',
+							'!**/tests/**',
+							'!**/sass/**',
+							'!**.zip',
+							'!**/**.orig',
+							'!**/**.map',
+							'!**/**Gruntfile.js',
+							'!**/**composer.json',
+							'!**/**composer.lock',
+							'!**/**bower.json',
+ 							'!vendor/tgmpa/tgm-plugin-activation/plugins/**'
+						],
+						dest: '/gc-staff'
 				} ]
 			}
 		},
 
-		copy: {
-			release: {
-				src: [
-					'**',
-					'!assets/js/components/**',
-					'!assets/css/sass/**',
-					'!assets/repo/**',
-					'!bin/**',
-					'!release/**',
-					'!tests/**',
-					'!node_modules/**',
-					'!**/*.md',
-					'!.travis.yml',
-					'!.bowerrc',
-					'!.gitignore',
-					'!bower.json',
-					'!Dockunit.json',
-					'!Gruntfile.js',
-					'!package.json',
-					'!phpunit.xml',
-				],
-				dest: 'release/' + pkg.version + '/'
-			},
-            svn: {
-                cwd: 'release/<%= pkg.version %>/',
-                expand: true,
-                src: '**',
-                dest: 'release/svn/'
-            }
-		},
-
-		compress: {
-            dist: {
-                options: {
-                    mode: 'zip',
-                    archive: './release/<%= pkg.name %>.<%= pkg.version %>.zip'
-                },
-                expand: true,
-                cwd: 'release/<%= pkg.version %>',
-                src: ['**/*'],
-                dest: '<%= pkg.name %>'
-            }
-        },
-
-        wp_deploy: {
-            dist: {
-                options: {
-                    plugin_slug: '<%= pkg.name %>',
-                    build_dir: 'release/svn/',
-                    assets_dir: 'assets/repo/'
-                }
-            }
-        },
-
-        clean: {
-            release: [
-                'release/<%= pkg.version %>/',
-                'release/svn/'
-            ]
-        }
+		githooks: {
+			all: {
+				// create zip and deploy changes to ftp
+				'pre-push': 'compress'
+			}
+		}
 
 	} );
 
+	// Default task.
 	grunt.registerTask( 'scripts', [] );
 	grunt.registerTask( 'styles', [] );
 	grunt.registerTask( 'php', [ 'addtextdomain', 'makepot' ] );
-	grunt.registerTask( 'default', ['styles', 'scripts', 'php'] );
+	grunt.registerTask( 'default', ['styles', 'scripts', 'php', 'compress'] );
 
-	grunt.registerTask( 'version', [ 'default', 'replace:version_php', 'replace:version_readme' ] );
-	grunt.registerTask( 'release', [ 'clean:release', 'replace:readme_txt', 'copy', 'compress', 'wp_deploy' ] );
+	grunt.registerTask( 'version', [ 'default', 'replace:version_php', 'replace:version_readme', 'compress' ] );
 
 	grunt.util.linefeed = '\n';
 };
