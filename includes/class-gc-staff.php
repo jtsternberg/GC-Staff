@@ -70,6 +70,10 @@ class GCST_Staff extends GCST_Post_Types_Base {
 		add_action( 'dbx_post_advanced', array( $this, 'remove_excerpt_box' ) );
 		add_filter( 'cmb2_override_excerpt_meta_value', array( $this, 'get_excerpt' ), 10, 2 );
 		add_filter( 'cmb2_override_excerpt_meta_save', '__return_true' );
+
+		// To remove:
+		// remove_filter( 'the_content', array( gc_staff()->staff, 'do_social_links' ) );
+		add_filter( 'the_content', array( $this, 'do_social_links' ) );
 	}
 
 	public function remove_excerpt_box() {
@@ -101,6 +105,36 @@ class GCST_Staff extends GCST_Post_Types_Base {
 				'name' => __( 'Staff Image', 'gc-staff' ),
 				'type' => 'file',
 			),
+			'social' => array(
+				'id'          => 'gc_staff_social',
+				'type'        => 'group',
+				'description' => __( 'Generates reusable form entries', 'gc-staff' ),
+				'options'     => array(
+					'group_title'   => __( 'Social Account {#}', 'gc-staff' ), // {#} gets replaced by row number
+					'add_button'    => __( 'Add Another Social Account', 'gc-staff' ),
+					'remove_button' => __( 'Remove Social Account', 'gc-staff' ),
+					'sortable'      => true, // beta
+					'closed'     => true, // true to have the groups closed by default
+				),
+				'fields' => array(
+					array(
+						'name' => __( 'Social Account Link Title', 'gc-staff' ),
+						'id'   => 'title',
+						'type' => 'text',
+					),
+					array(
+						'name' => __( 'Social Account Link URL', 'gc-staff' ),
+						'id'   => 'url',
+						'type' => 'text_url',
+					),
+					array(
+						'name' => __( 'Social Account Link CSS Class', 'gc-staff' ),
+						'desc'    => __( 'Enter classes separated by spaces (e.g. "fa fa-facebook")', 'gc-staff' ),
+						'id'   => 'classes',
+						'type' => 'text',
+					),
+				),
+			),
 		);
 
 		$this->new_cmb2( array(
@@ -109,6 +143,39 @@ class GCST_Staff extends GCST_Post_Types_Base {
 			'object_types' => array( $this->post_type() ),
 			'fields'       => $fields,
 		) );
+	}
+
+	public function do_social_links( $content ) {
+		if ( ! is_main_query() ) {
+			return $content;
+		}
+
+		$social = get_post_meta( get_the_id(), 'gc_staff_social', 1 );
+
+		if ( $social && is_array( $social ) && ! empty( $social ) ) {
+
+			$links = '';
+
+			foreach ( $social as $account ) {
+
+				$classes = isset( $account['classes'] ) ? $account['classes'] : '';
+				$url     = isset( $account['text_url'] ) ? $account['text_url'] : '';
+				$text    = isset( $account['text'] ) ? $account['text'] : $url;
+
+				$links .= sprintf(
+					'<li><a class="%s" href="%s">%s</a></li>',
+					esc_attr( $classes ),
+					esc_url( $url ),
+					wp_kses_post( $text )
+				);
+			}
+
+			$links = sprintf( '<ul class="gc-staff-social">%s</ul><!-- .gc-staff-social -->', $links );
+
+			$content .= $links;
+		}
+
+		return $content;
 	}
 
 	/**
