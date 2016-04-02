@@ -17,7 +17,9 @@
 	},
 	"require": {
 		"php": ">=5.2",
-		"xrstf/composer-php52": "1.*"
+		"xrstf/composer-php52": "1.*",
+		"webdevstudios/cpt-core": "^1.0",
+		"webdevstudios/cmb2": "^2.2"
 	},
 	"scripts": {
         "post-install-cmd": [

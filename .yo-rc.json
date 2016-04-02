@@ -10,7 +10,7 @@
     "license": "GPLv2",
     "slug": "gc-staff",
     "classname": "GC_Staff",
-    "classprefix": "GCS_",
+    "classprefix": "GCST_",
     "prefix": "gc_staff",
     "year": 2016
   }

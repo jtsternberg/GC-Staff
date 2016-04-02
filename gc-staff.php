@@ -34,10 +34,8 @@
  * Built using generator-plugin-wp
  */
 
-
 // User composer autoload.
 require 'vendor/autoload_52.php';
-
 
 /**
  * Main initiation class
@@ -91,6 +89,14 @@ class GC_Staff {
 	protected static $single_instance = null;
 
 	/**
+	 * Instance of GCST_Staff
+	 *
+	 * @since NEXT
+	 * @var GCST_Staff
+	 */
+	protected $staff;
+
+	/**
 	 * Creates or returns an instance of this class.
 	 *
 	 * @since  NEXT
@@ -125,7 +131,7 @@ class GC_Staff {
 	 */
 	public function plugin_classes() {
 		// Attach other plugin classes to the base plugin class.
-		// $this->plugin_class = new GCS_Plugin_Class( $this );
+		$this->staff = new GCST_Staff( $this );
 	} // END OF PLUGIN CLASSES FUNCTION
 
 	/**
@@ -244,6 +250,7 @@ class GC_Staff {
 			case 'basename':
 			case 'url':
 			case 'path':
+			case 'staff':
 				return $this->$field;
 			default:
 				throw new Exception( 'Invalid '. __CLASS__ .' property: ' . $field );
