@@ -40,6 +40,9 @@ require 'vendor/autoload_52.php';
 /**
  * Main initiation class
  *
+ * @todo Allow connected users to edit their staff info
+ * @todo Ask, when creating users, if they should be mapped to staff
+ *
  * @since  NEXT
  * @var  string $version  Plugin version
  * @var  string $basename Plugin basename
