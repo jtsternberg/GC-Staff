@@ -77,8 +77,12 @@ class GCST_Staff extends GCST_Post_Types_Base {
 	}
 
 	public function remove_excerpt_box() {
-		remove_meta_box( 'postexcerpt', null, 'normal' );
-		remove_meta_box( 'postimagediv', null, 'side' );
+		$screen = get_current_screen();
+
+		if ( isset( $screen->post_type ) && $this->post_type() === $screen->post_type ) {
+			remove_meta_box( 'postexcerpt', null, 'normal' );
+			remove_meta_box( 'postimagediv', null, 'side' );
+		}
 	}
 
 	public function get_excerpt( $data, $post_id ) {
