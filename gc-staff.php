@@ -164,6 +164,7 @@ class GC_Staff {
 	 * @return void
 	 */
 	public function _activate() {
+		self::get_instance();
 		// Make sure any rewrite functionality has been loaded.
 		flush_rewrite_rules();
 	}
@@ -175,7 +176,9 @@ class GC_Staff {
 	 * @since  NEXT
 	 * @return void
 	 */
-	public function _deactivate() {}
+	public function _deactivate() {
+		flush_rewrite_rules();
+	}
 
 	/**
 	 * Init hooks
